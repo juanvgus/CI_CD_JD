@@ -8,4 +8,4 @@ def es_primo(num):
 
 
 def test_answer():
-    assert es_primo(3) == "Es primo"
+    assert es_primo(3) ==  True
