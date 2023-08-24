@@ -32,7 +32,9 @@ jobs:
           aws-region: us-east-1      
 
       - name: subirS3
-        run: ls
+        run: |
+          aws s3api list-buckets
+          aws s3 cp utils.py s3://bdjdv/
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
